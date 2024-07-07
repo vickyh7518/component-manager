@@ -22,4 +22,10 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, './build'), // 本來打包完的檔案位置
+        },
+        port: 8080, // 預覽網頁要跑在哪個port
+    }
 };
